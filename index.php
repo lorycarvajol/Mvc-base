@@ -1,4 +1,7 @@
-<?php ob_start() ?>
+<?php 
+
+ob_start() 
+?>
 
 <?php
 $titre = "Accueil";

@@ -1,11 +1,11 @@
-<?php 
-
-ob_start() 
-?>
-
 <?php
-$titre = "Accueil";
-$content = ob_get_clean();
 
-require "template.php";
-?>
+if(empty($_GET['page'])){
+     require "views/acceuil.views.php";
+}else{
+     switch($_GET['page']){
+          case "accueil":
+               require "views/acceuil.views.php";
+               break;
+     }          
+}
